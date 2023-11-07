@@ -5,11 +5,17 @@
 
 body {
   overflow-x:hidden;
+  animation: hue-rotate 6s infinite;
+  background: url('https://images.unsplash.com/photo-1666811260863-560f6b6e0e29?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  -webkit-filter: grayscale(30%);
+  z-index: -1;
 }
 .login-form{
  margin-top: 70px;
- margin-left: 70px;
+ margin-right: 20px;
 }
+
 
 
 a{ text-decoration: none; color: #53585e; }
@@ -44,7 +50,7 @@ ul{ padding: 0; margin: 0; list-style: none; }
   line-height: 45px;
   text-align: center;
   color: #fff;
-  background: #ff0000;
+  background: #1964af;
 } 
 
 .login-form .form-body .field .form-control{
@@ -89,7 +95,7 @@ ul{ padding: 0; margin: 0; list-style: none; }
 }
 .social-network li{
 	  display: inline-block;
-    background-color: #4867aa;
+    background-color: #1964af;
     padding: 5px 10px;
     border-radius: 3px;
     width: 87px;
@@ -114,9 +120,25 @@ ul{ padding: 0; margin: 0; list-style: none; }
 	  display: flex;
     align-items: center;
 }
+.login-btn{
+  background: #1964af;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.title-right{
+  font-weight: 700;
+  color: #295f95;
+}
+
+.signup-btn{
+  margin-top: 40px;
+}
 
 /*Chỉnh responsive*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 650px){
 	.login-form .form-bg, .form-description{
 		padding: 15px;
 	}
@@ -129,4 +151,23 @@ ul{ padding: 0; margin: 0; list-style: none; }
 	.login-form .form-bg{
 		order: 1;
 	}
+  
+}
+@media screen and (max-width: 980px){
+	.login-form .form-bg, .form-description{
+		padding: 15px;
+	}
+	.login-form .form-bg, .col-form-description{
+		min-height:100%;
+	}
+	.form-description{
+		text-align: center;
+	}
+	.login-form .form-bg{
+		order: 1;
+	}
+  .login-form{
+    
+    margin: 0;
+   }
 }
