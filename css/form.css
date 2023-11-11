@@ -8,7 +8,7 @@ body {
   animation: hue-rotate 6s infinite;
   background: url('https://images.unsplash.com/photo-1666811260863-560f6b6e0e29?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
-  -webkit-filter: grayscale(30%);
+  
   z-index: -1;
 }
 .login-form{
@@ -42,7 +42,10 @@ ul{ padding: 0; margin: 0; list-style: none; }
 .login-form .form-body .field{
 
     display: flex;
+    
 }  
+
+
 
 .login-form .form-body .field span{
   height: 45px;
@@ -71,6 +74,14 @@ ul{ padding: 0; margin: 0; list-style: none; }
     
 }
 
+.login-form .form-body .field input:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  /* border: 1px solid rgb(0, 94, 255);
+  border-radius: 4px; */
+  
+}
 .login-form .form-footer .title{
 	font-size: 2rem;
   font-weight: 400;
@@ -136,6 +147,23 @@ ul{ padding: 0; margin: 0; list-style: none; }
 .signup-btn{
   margin-top: 40px;
 }
+
+
+#email_error, #pass_error{
+  margin-top: 5px;
+  font-size: 15px;
+  width: 508px;
+  color: #e41a1a;
+  background: rgba(99, 3, 3, 0.1);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #ce8b8b;
+  display: none;
+}
+
+
+
 
 /*Chỉnh responsive*/
 @media screen and (max-width: 650px){
