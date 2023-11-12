@@ -233,3 +233,10 @@ function login(e){
 		alert("Đăng nhập thất bại");
 	}
 }
+
+obj = [
+	{
+		productName : "iPhone 14 Pro Max 128GB3q45345"
+
+	}
+]
