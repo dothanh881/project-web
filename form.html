@@ -31,7 +31,17 @@
                 <h2 class="title">Đăng nhập</h2>
               </div>
               <div class="form-body">
-                <form action="" method="post" name="form" onsubmit="return validated()">
+                <form  name="form" onsubmit=" login()">
+                  <div class="form-group mb-3">
+                    <label for="username" class="form-label">Tên người dùng</label>
+                    <div class="field">
+                      <span><i class="fa fa-envelope"></i></span>
+                      <input type="text" class="form-control" name="username" id="username" placeholder="Nhập tên người dùng">
+                      
+                    </div>
+                    
+                  
+                  </div>
                 <div class="form-group mb-3">
                   <label for="email" class="form-label">Địa chỉ email</label>
                   <div class="field">
@@ -96,7 +106,7 @@
   </section>
 
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
