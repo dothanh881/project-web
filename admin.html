@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADMIN</title>
     
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -51,9 +51,45 @@
             
             <div class="profile">
               <i class="fa fa-bell" aria-hidden="true"></i>
-              <a class="rounded-circle  show" id="dropdownUser" aria-expanded="true" >
-                <img src="img/ava1.png" alt="">
-              </a>
+              
+                <img src="img/ava1.png" alt="" onclick="toggleMenu()">
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <img src="img/ava1.png" alt="">
+                      <h3>Admin</h3>
+                    </div>
+
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                      <img src="img/profile.png" alt="">
+                      <p>Edit Profile</p>
+                      <span>></span>
+                    </a>
+
+                    
+                    <a href="#" class="sub-menu-link">
+                      <img src="img/setting.png" alt="">
+                      <p>Settings & Privacy</p>
+                      <span>></span>
+                    </a>
+                    
+                    <a href="#" class="sub-menu-link">
+                      <img src="img/help.png" alt="">
+                      <p>Help & Support</p>
+                      <span>></span>
+                    </a>
+                    
+                    <a href="login.html" class="sub-menu-link">
+                      <img src="img/logout.png" alt="">
+                      <p>Logout</p>
+                      <span>></span>
+                    </a>
+
+                  </div>
+                </div>
+            
               
 
               </div>
@@ -291,6 +327,12 @@
           $('#menu').toggleClass("act");
           });
           });
+
+          let subMenu = document.getElementById("subMenu");
+          function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+          }
+
 
       </script>
 
