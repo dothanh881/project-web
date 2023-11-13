@@ -216,7 +216,7 @@ function signup(e){
 function login(e){
 	event.preventDefault();
 	let username = document.getElementById("username").value;
-	let email = document.getElementById("email").value;
+	// let email = document.getElementById("email").value;
 	let password = document.getElementById("password").value;
 	let user = localStorage.getItem(username);
 	let data = JSON.parse(user);
@@ -224,19 +224,18 @@ function login(e){
 		alert("Vui lòng nhập thông tin");
 
 	}
-	else if( username == data.username && email == data.email && password == data.password){
+	else if( username == data.username && password == data.password){
 			alert("Đăng nhập thành công!");
-			location.href="admin.html";
+			
+			if(data.username == "admin12" && data.password == "admin123"){
+				location.href="admin.html";
+			}
+			else if (data.username = "user123" && data.password == "user113"){
+				location.href = "index.html";
+			}
 
 	}
 	else{
 		alert("Đăng nhập thất bại");
 	}
 }
-
-obj = [
-	{
-		productName : "iPhone 14 Pro Max 128GB3q45345"
-
-	}
-]

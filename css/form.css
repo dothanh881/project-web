@@ -12,8 +12,7 @@ body {
   z-index: -1;
 }
 .login-form{
- margin-top: 70px;
- margin-right: 20px;
+ margin-top: 80px;
 }
 
 
@@ -22,15 +21,13 @@ a{ text-decoration: none; color: #53585e; }
 
 ul{ padding: 0; margin: 0; list-style: none; }
 
-.login-form .form-bg, .col-form-description{
-	min-height: 100vh;
-}
+
 
 
 .login-form .form-container{
   background-color: #15161D;
   border-radius: 20px;
-  padding: 50px;
+  padding: 20px 50px;
   color: aliceblue;
 }
 
@@ -56,16 +53,13 @@ ul{ padding: 0; margin: 0; list-style: none; }
   background: #1964af;
 } 
 
-.login-form .form-body .field .form-control{
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left:0;
-}
+
 .login-form .forgot-password{ float: right; }
 
 
 .form-body .field .form-control{
   height: 45px;
+  
 }
 
 .login-form .submit{
@@ -121,28 +115,12 @@ ul{ padding: 0; margin: 0; list-style: none; }
 .social-network li.gmail{
 	background-color: #db4437;
 }
-.form-description{
-	  text-align: left;
-    padding-right: 100px;
-    padding-left: 50px;
-    margin-top: 50px;
-}
-.col-form-description{
-	  display: flex;
-    align-items: center;
-}
+
+
 .login-btn{
   background: #1964af;
 }
-.right{
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
-}
-.title-right{
-  font-weight: 700;
-  color: #295f95;
-}
+
 
 .signup-btn{
   margin-top: 40px;

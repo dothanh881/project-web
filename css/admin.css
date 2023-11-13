@@ -91,9 +91,9 @@ body{
     padding: 15px 30px ;
     border-bottom:3px solid ;
     position: fixed;
-    width: calc(100%);
-    /* position: relative; */
+    width: 100%;
     position: relative;
+   
 }
 
 
