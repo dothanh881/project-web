@@ -231,7 +231,7 @@ function login(e){
 				location.href="admin.html";
 			}
 			else if (data.username = "user123" && data.password == "user113"){
-				location.href = "index.html";
+				location.href = "user.html";
 			}
 
 	}

@@ -473,16 +473,18 @@ textarea.input {
 .header-search form .input-select {
   margin-right: -4px;
   border-radius: 40px 0px 0px 40px;
-  /* -webkit-appearance: none;
+  -webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	cursor: pointer;
-  padding-left: 30px; */
+  padding-left: 30px;
+
 }
 
 .header-search form .input {
-  width: calc(100% - 260px);
+  width: calc(100% - 200px);
   margin-right: -4px;
+  border-radius: 40px 0px 0px 40px;
 }
 
 .header-search form .search-btn {
@@ -2121,4 +2123,16 @@ textarea.input {
     float: none;
     margin-top: 10px;
   }
+}
+
+.iconcate-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: solid 1px #97a3b9;
+  background-color: #fff;
+  margin-right: -15px ;
+  position: relative;
 }

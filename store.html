@@ -27,7 +27,9 @@
  		<!-- Custom stlylesheet -->
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-		
+		<style>
+	
+		</style>
 
     </head>
 	<body>
@@ -43,7 +45,7 @@
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-money"></i> VND</a></li>
-						<li><a href="login.html"  ><i class="fa fa-user-o"></i> Tài Khoản</a></li>
+						<li><a href="login.html"  ><i class="fa fa-user-o"></i> Tài khoản</a></li>
 					</ul>
 				</div>
 			</div>
@@ -69,12 +71,8 @@
 						<div class="col-md-6">
 							<div class="header-search">
 								<form>
-									<select class="input-select">
-										<option value="0">Tất cả</option>
-										<option value="1">Samsung</option>
-										<option value="1">Iphone</option>
-									</select>
-									<input class="input" placeholder="Search here">
+
+									<input class="input" placeholder="Bạn cần tìm gì?">
 									<button class="search-btn">Tìm kiếm</button>
 								</form>
 							</div>
@@ -88,8 +86,8 @@
 								<div>
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
-										<span>yêu thích</span>
-										<div class="qty">2</div>
+										<span>Yêu thích</span>
+										<!-- <div class="qty">2</div> -->
 									</a>
 								</div>
 								<!-- /Wishlist -->
@@ -98,45 +96,45 @@
 											<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 												<i class="fa fa-shopping-cart"></i>
 												<span>Giỏ hàng</span>
-												<div class="qty">3</div>
+												<div class="qty">4</div>
 											</a>
-
-								<!-- Cart -->
+											<div class="cart-dropdown">
+												<div class="cart-list">
+													<div class="product-widget">
+														<div class="product-img">
+															<img src="./img/product01.png" alt="">
+														</div>
+														<div class="product-body">
+															<h3 class="product-name"><a href="#">iPhone 14 Pro Max 256GB</a></h3>
+															<h4 class="product-price"><span class="qty">1x</span>27.090.000₫</h4>
+														</div>
+														<button class="delete"><i class="fa fa-close"></i></button>
+													</div>
+		
+													<div class="product-widget">
+														<div class="product-img">
+															<img src="./img/product02.png" alt="">
+														</div>
+														<div class="product-body">
+															<h3 class="product-name"><a href="#">iPhone 13 Pro Max 512GB</a></h3>
+															<h4 class="product-price"><span class="qty">3x</span>23.990.000₫</h4>
+														</div>
+														<button class="delete"><i class="fa fa-close"></i></button>
+													</div>
+												</div>
+												<div class="cart-summary">
+													<small>4 sản phẩm được chọn</small>
+													<h5>TỔNG: 99.060.000₫</h5>
+												</div>
+												<div class="cart-btns">
+													<a href="#">Xem giỏ hàng</a>
+													<a href="checkout.html">Thanh toán <i class="fa fa-arrow-circle-right"></i></a>
+												</div>
+											</div>
+										</div>
 								
-									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/product01.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">IPHONE 14 PRO MAX</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>27.090.000₫</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/product02.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">IPHONE 13 PRO MAX 512GB</a></h3>
-													<h4 class="product-price"><span class="qty">3x</span>23.990.000₫</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-										</div>
-										<div class="cart-summary">
-											<small>3 sản phẩm được chọn </small>
-											<h5>Tổng tiền : 99.060.000₫</h5>
-										</div>
-										<div class="cart-btns">
-											<a href="#">Xem giỏ hàng</a>
-											<a href="#">Thanh toán  <i class="fa fa-arrow-circle-right"></i></a>
-										</div>
-									</div>
-								</div>
+								
+							
 								<!-- /Cart -->
 
 								<!-- Menu Toogle -->
@@ -191,25 +189,28 @@
 					<div id="aside" class="col-md-3">
 						<!-- aside Widget -->
 						<div class="aside">
-							<h3 class="aside-title">Phân loại</h3>
+							<h3 class="aside-title">PHÂN LOẠI</h3>
 							<div class="checkbox-filter">
-
-								<div class=" input-checkbox">
-									<input type="checkbox" id=" category-1" name="category"> 
-									<label for="category-1">
-										<span></span>
-										Samsung
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id=" category-2" name="category">
-									<label for="category-2">
-										<span></span>
-										Iphone
-									</label>
-								</div>
-
+									<div class="input-checkbox">
+										<input type="checkbox" id="category-1" data-href="samsung.html">
+										<label for="category-1">
+										  <span></span>
+										  Samsung
+										  <small>(120)</small>
+										</label>
+									</div>
+								  
+									<div class="input-checkbox">
+										<input type="checkbox" id="category-6" data-href="iphone.html">
+										<label for="category-6">
+										  <span></span>
+										  Iphone
+										  <small>(740)</small>
+										</label>
+									  </div>
+									
+								  
+								
 							</div>
 						</div>
 						<!-- /aside Widget -->
@@ -655,7 +656,7 @@
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>273 An Dương Vương</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+098-95-51-84</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>cook.shop@email.com</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -736,6 +737,19 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			
 
+		const checkboxes = document.querySelectorAll('.input-checkbox input');
+		checkboxes.forEach(checkbox => {
+  		checkbox.addEventListener('click', () => {
+		const href = checkbox.dataset.href;
+		const link = document.createElement('a');
+		link.href = href;
+		link.target = '_self';
+		link.click();
+		});
+		});
+		</script>
 	</body>
 </html>
