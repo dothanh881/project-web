@@ -200,7 +200,31 @@ function signup(e){
 	let username = document.getElementById("username").value;
 	let email = document.getElementById("email").value;
 	let password = document.getElementById("password").value;
-	
+	let confirmPassword = document.getElementById("confirm_password").value;
+
+	if (!username) {
+		alert('Vui lòng nhập tên người dùng.');
+		return;
+	  }
+
+	  const emailRegex = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	  if (!emailRegex.test(email)) {
+		alert('Vui lòng nhập Email.');
+		return;
+	  }
+
+	  if (!password) {
+		alert('Vui lòng nhập mật khẩu.');
+		return;
+	  }
+	  
+
+	if(confirmPassword !== password){
+		alert("Mật khẩu không khớp. Vui lòng nhập lại.");
+    	return;
+	}
+
+
 	let user = {
 		username : username,
 		email : email,
@@ -209,6 +233,8 @@ function signup(e){
 
 	let json = JSON.stringify(user);
 	localStorage.setItem(username,json);
+	
+	
 	alert("Đăng kí thành công");
 
 }
@@ -220,10 +246,21 @@ function login(e){
 	let password = document.getElementById("password").value;
 	let user = localStorage.getItem(username);
 	let data = JSON.parse(user);
-	if(user == null){
-		alert("Vui lòng nhập thông tin");
+	
 
+	if(!username){
+		alert("Vui lòng nhập tên người dùng!");
 	}
+
+	else if(!password){
+		alert("Vui lòng nhập mật khẩu!");
+	}
+
+	else{
+	if(user == null){
+			alert("Vui lòng nhập thông tin");
+	
+		}
 	else if( username == data.username && password == data.password){
 			alert("Đăng nhập thành công!");
 			
@@ -235,9 +272,14 @@ function login(e){
 			}
 
 	}
+
+	
+ 	
+
 	else{
-		alert("Đăng nhập thất bại");
+		alert("Đăng nhập thất bại. Mật khẩu hoặc tài khoản không đúng.");
 	}
+}
 }
 //cart
 const quantityInput = document.getElementById('cart-input');
