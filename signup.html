@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/form.css">
+    
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/form.css">   
+    <link rel="stylesheet" href="css/signup.css">   
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -14,16 +14,10 @@
   <section id="login-form" class="login-form">
       <div class="container-fuild">
         <div class="row">
-          <div class="col-md-7 right">
-
-            <div class="form-description">
-              <h1 class="title text-center title-right">CHÀO MỪNG ĐẾN VỚI HEHE</h1>
-              
-            </div>
-          </div>
+       
 
 
-          <div class="col-md-5 ">
+          <div class="col-md-6 col-md-offset-3 d-flex align-items-center ">
             <div class="form-container">
 
               <div class="form-header text-center">
@@ -31,7 +25,7 @@
                 <h2 class="title">Đăng kí</h2>
               </div>
               <div class="form-body">
-                <form action="" method="post">
+                <form  onsubmit="signup()">
                     <div class="form-group mb-3">
                         <label for="username" class="form-label">Tên người dùng</label>
                         <div class="field">
@@ -79,7 +73,7 @@
                 </div> -->
 
                 <div class="form-group mb-3 signup-btn">
-                  <button type="submit" class="btn btn-block login-btn" >Đăng kí</button>
+                  <button class="btn btn-block login-btn" >Đăng kí</button>
                 </div>
                 
                 </div>  
@@ -92,6 +86,10 @@
                     <li class="twitter"><a href="#">Twitter</a></li>
                     <li class="gmail"><a href="#">Gmail</a></li>
                   </ul>
+                  <div class="bottom text-center">
+                    <span>Đã có tài khoản! </span><a href="login.html"> Đăng nhập ngay</a>
+                  </div>
+              
 
                 </div>
               </div>
@@ -107,7 +105,7 @@
   </section>
 
   <script src="js/bootstrap.min.js"></script>
-  
+  <script src="js/main.js"></script>
 
 </body>
 </html>
