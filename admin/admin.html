@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADMIN</title>
     
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="/css/admin.css">
 
 </head>
 </head>
@@ -17,7 +17,7 @@
 
       <section id="menu">
           <div class="logo">
-            <img src="img/logo.png" alt="">
+            <img src="/img/logo.png" alt="">
             <h2>ADMIN</h2>
           </div>
           <div class="items">
@@ -52,38 +52,38 @@
             <div class="profile">
               <i class="fa fa-bell" aria-hidden="true"></i>
               
-                <img src="img/ava1.png" alt="" onclick="toggleMenu()">
+                <img src="/img/ava1.png" alt="" onclick="toggleMenu()">
                 <div class="sub-menu-wrap" id="subMenu">
                   <div class="sub-menu">
                     <div class="user-info">
-                      <img src="img/ava1.png" alt="">
+                      <img src="/img/ava1.png" alt="">
                       <h3>Admin</h3>
                     </div>
 
                     <hr>
 
                     <a href="#" class="sub-menu-link">
-                      <img src="img/profile.png" alt="">
-                      <p>Edit Profile</p>
+                      <img src="/img/profile.png" alt="">
+                      <p>Chỉnh sửa hồ sơ</p>
                       <span>></span>
                     </a>
 
                     
                     <a href="#" class="sub-menu-link">
-                      <img src="img/setting.png" alt="">
-                      <p>Settings & Privacy</p>
+                      <img src="/img/setting.png" alt="">
+                      <p>Cài đặt</p>
                       <span>></span>
                     </a>
                     
                     <a href="#" class="sub-menu-link">
-                      <img src="img/help.png" alt="">
-                      <p>Help & Support</p>
+                      <img src="/img/help.png" alt="">
+                      <p>Giúp đỡ & Hỗ trợ</p>
                       <span>></span>
                     </a>
                     
-                    <a href="login.html" class="sub-menu-link">
-                      <img src="img/logout.png" alt="">
-                      <p>Logout</p>
+                    <a href="/login.html" class="sub-menu-link">
+                      <img src="/img/logout.png" alt="">
+                      <p>Đăng xuất</p>
                       <span>></span>
                     </a>
 
@@ -162,7 +162,7 @@
             <tbody>
               <tr>
                 <td class="people">
-                  <img src="img/ava1.png" alt="">
+                  <img src="/img/ava1.png" alt="">
                   <div class="people-des">
                     <h5>Đỗ Thành</h5>
                     <p>thanhdo@gmail.com</p>
@@ -187,7 +187,7 @@
 
               <tr>
                 <td class="people">
-                  <img src="img/ava1.png" alt="">
+                  <img src="/img/ava1.png" alt="">
                   <div class="people-des">
                     <h5>Đỗ Thành</h5>
                     <p>thanhdo@gmail.com</p>
@@ -211,7 +211,7 @@
               </tr>
               <tr>
                 <td class="people">
-                  <img src="img/ava1.png" alt="">
+                  <img src="/img/ava1.png" alt="">
                   <div class="people-des">
                     <h5>Đỗ Thành</h5>
                     <p>thanhdo@gmail.com</p>
@@ -235,7 +235,7 @@
               </tr>
               <tr>
                 <td class="people">
-                  <img src="img/ava1.png" alt="">
+                  <img src="/img/ava1.png" alt="">
                   <div class="people-des">
                     <h5>Đỗ Thành</h5>
                     <p>thanhdo@gmail.com</p>
@@ -259,7 +259,7 @@
               </tr>
               <tr>
                 <td class="people">
-                  <img src="img/ava1.png" alt="">
+                  <img src="/img/ava1.png" alt="">
                   <div class="people-des">
                     <h5>Đỗ Thành</h5>
                     <p>thanhdo@gmail.com</p>
@@ -283,7 +283,7 @@
               </tr>
               <tr>
                 <td class="people">
-                  <img src="img/ava1.png" alt="">
+                  <img src="/img/ava1.png" alt="">
                   <div class="people-des">
                     <h5>Đỗ Thành</h5>
                     <p>thanhdo@gmail.com</p>
@@ -320,21 +320,8 @@
 
       </section>
 
-      <script src="js/jquery.min.js"></script>
-      <script>
-            $(document).ready(function(){
-          $('#menu-btn').click(function(){
-          $('#menu').toggleClass("act");
-          });
-          });
-
-          let subMenu = document.getElementById("subMenu");
-          function toggleMenu(){
-            subMenu.classList.toggle("open-menu");
-          }
-
-
-      </script>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/admin.js"></script>
 
 
 

@@ -26,26 +26,50 @@
 
  		<!-- Custom stlylesheet -->
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
-
-		<style>
-	
-		</style>
+        <link rel="stylesheet" href="css/user.css">
+		
 
     </head>
 	<body>
 		<!-- HEADER -->
 		<header>
 			<!-- TOP HEADER -->
-			<div id="top-header">
+			<div id="top-header" class="user">
 				<div class="container">
 					<ul class="header-links pull-left">
 						<li><a href="#"><i class="fa fa-phone"></i> +098-95-51-84</a></li>
 						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i> 273 An Dương Vương</a></li>
 					</ul>
-					<ul class="header-links pull-right">
+					<ul class="header-links pull-right ">
 						<li><a href="#"><i class="fa fa-money"></i> VND</a></li>
-						<li><a href="login.html"  ><i class="fa fa-user-o"></i> Tài khoản</a></li>
+						<li><img class="ava-user"  src="img/ava1.png"  alt=""onclick="toggleMenu()" > <a href="#">user123</a></li>     
+						<div class="sub-menu-wrap" id="subMenu">
+						  <div class="sub-menu">
+							<div class="user-info">
+							  <img src="img/ava1.png" alt="">
+							  <h3>User123</h3>
+							</div>
+		
+							<hr>
+		
+							<a href="#" class="sub-menu-link">
+							  <img src="img/profile.png" alt="">
+							  <p>Chỉnh sửa hồ sơ</p>
+							  <span>></span>
+							</a>
+		
+							
+					
+				
+							<a href="login.html" class="sub-menu-link">
+							  <img src="img/logout.png" alt="">
+							  <p>Đăng xuất</p>
+							  <span>></span>
+							</a>
+		
+						  </div>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -60,7 +84,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="user.html" class="logo">
 									<img src="./img/logo.png" alt="logo" >
 								</a>
 							</div>
@@ -71,8 +95,8 @@
 						<div class="col-md-6">
 							<div class="header-search">
 								<form>
-
-									<input class="input" placeholder="Bạn cần tìm gì?">
+									
+									<input class="input" placeholder="Search here">
 									<button class="search-btn">Tìm kiếm</button>
 								</form>
 							</div>
@@ -98,43 +122,43 @@
 												<span>Giỏ hàng</span>
 												<div class="qty">4</div>
 											</a>
-											<div class="cart-dropdown">
-												<div class="cart-list">
-													<div class="product-widget">
-														<div class="product-img">
-															<img src="./img/product01.png" alt="">
-														</div>
-														<div class="product-body">
-															<h3 class="product-name"><a href="#">iPhone 14 Pro Max 256GB</a></h3>
-															<h4 class="product-price"><span class="qty">1x</span>27.090.000₫</h4>
-														</div>
-														<button class="delete"><i class="fa fa-close"></i></button>
-													</div>
-		
-													<div class="product-widget">
-														<div class="product-img">
-															<img src="./img/product02.png" alt="">
-														</div>
-														<div class="product-body">
-															<h3 class="product-name"><a href="#">iPhone 13 Pro Max 512GB</a></h3>
-															<h4 class="product-price"><span class="qty">3x</span>23.990.000₫</h4>
-														</div>
-														<button class="delete"><i class="fa fa-close"></i></button>
-													</div>
+
+								<!-- Cart -->
+								
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product01.png" alt="">
 												</div>
-												<div class="cart-summary">
-													<small>4 sản phẩm được chọn</small>
-													<h5>TỔNG: 99.060.000₫</h5>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">IPHONE 14 PRO MAX</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>27.090.000₫</h4>
 												</div>
-												<div class="cart-btns">
-													<a href="cart.html">Xem giỏ hàng</a>
-													<a href="checkout.html">Thanh toán <i class="fa fa-arrow-circle-right"></i></a>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product02.png" alt="">
 												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">IPHONE 13 PRO MAX 512GB</a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>23.990.000₫</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
 											</div>
 										</div>
-								
-								
-							
+										<div class="cart-summary">
+											<small>4 sản phẩm được chọn </small>
+											<h5>Tổng tiền : 99.060.000₫</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">Xem giỏ hàng</a>
+											<a href="checkout1.html">Thanh toán  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
 								<!-- /Cart -->
 
 								<!-- Menu Toogle -->
@@ -165,8 +189,8 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li ><a href="index.html">Trang chủ</a></li>
-						<li class="active"><a href="#">Sản phẩm </a></li>
+						<li ><a href="user.html">Trang chủ</a></li>
+						<li class="active"><a href="store1.html">Sản phẩm </a></li>
 						
 					</ul>
 					<!-- /NAV -->
@@ -176,7 +200,23 @@
 			<!-- /container -->
 		</nav>
 		<!-- /NAVIGATION -->
-
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="breadcrumb-tree">
+							<li><a href="user.html">Trang chủ</a></li>
+							<li><a href="store1.html">Sản phẩm</a></li>
+							<li><a href="iphone1.html">Iphone</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
 	
 
 		<!-- SECTION -->
@@ -192,7 +232,7 @@
 							<h3 class="aside-title">PHÂN LOẠI</h3>
 							<div class="checkbox-filter">
 									<div class="input-checkbox">
-										<input type="checkbox" id="category-1" data-href="samsung.html">
+										<input type="checkbox" id="category-1" data-href="samsung1.html">
 										<label for="category-1">
 										  <span></span>
 										  Samsung
@@ -201,7 +241,7 @@
 									</div>
 								  
 									<div class="input-checkbox">
-										<input type="checkbox" id="category-6" data-href="iphone.html">
+										<input type="checkbox" id="category-6" data-href="iphone1.html">
 										<label for="category-6">
 										  <span></span>
 										  Iphone
@@ -423,137 +463,11 @@
 									</div>
 								</div>
 							</div>
-							<!-- /product -->
+							
 
-							<div class="clearfix visible-sm visible-xs"></div>
+							
+							
 
-							<!-- product -->
-							<div class="col-md-4 col-xs-6">
-								<div class="product">
-									<div class="product-img">
-										<img src="./img/product05.png" alt="">
-										<div class="product-label">
-						
-											<span class="new">MỚI</span>
-										</div>
-									</div>
-									<div class="product-body">
-										<p class="product-category">Samsung</p>
-										<h3 class="product-name"><a href="#">SAMSUNG GALAXY S23 ULTRA</a></h3>
-										<h4 class="product-price">31.990.000₫</h4>
-										<div class="product-rating">
-										</div>
-										<div class="product-btns">
-											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Yêu thích</span></button>
-											<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">So sánh</span></button>
-											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Xem nhanh</span></button>
-										</div>
-									</div>
-									<div class="add-to-cart">
-										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Bỏ vào giỏ hàng</button>
-									</div>
-										
-								</div>
-							</div>
-							<!-- /product -->
-
-							<!-- product -->
-							<div class="col-md-4 col-xs-6">
-								<div class="product">
-									<div class="product-img">
-										<img src="./img/product06.png" alt="">
-										<div class="product-label">
-											<span class="sale">-30%</span>
-										</div>
-									</div>
-									<div class="product-body">
-										<p class="product-category">Samsung</p>
-										<h3 class="product-name"><a href="#">SAMSUNG GALAXY S21 5G</a></h3>
-										<h4 class="product-price">10.590.000₫ <del class="product-old-price">15.590.000₫</del></h4>
-										<div class="product-rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star-o"></i>
-										</div>
-										<div class="product-btns">
-											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Yêu thích</span></button>
-											<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">So sánh</span></button>
-											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Xem nhanh</span></button>
-										</div>
-									</div>
-									<div class="add-to-cart">
-										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Bỏ vào giỏ hàng</button>
-									</div>
-								</div>
-							</div>
-							<!-- /product -->
-
-							<div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
-
-							<!-- product -->
-							<div class="col-md-4 col-xs-6">
-								<div class="product">
-									<div class="product-img">
-										<img src="./img/product07.png" alt="">
-										<div class="product-label">
-											<span class="sale">-30%</span>
-										</div>
-									</div>
-									<div class="product-body">
-										<p class="product-category">Samsung </p>
-										<h3 class="product-name"><a href="#">SAMSUNG GALAXY Z FLIP 4</a></h3>
-										<h4 class="product-price">12.890.000₫ <del class="product-old-price">13.090.000₫</del></h4>
-										<div class="product-rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</div>
-										<div class="product-btns">
-											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Yêu thích</span></button>
-											<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">So sánh</span></button>
-											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Xem nhanh</span></button>
-										</div>
-									</div>
-									<div class="add-to-cart">
-										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Bỏ vào giỏ hàng</button>
-									</div>
-								</div>
-							</div>
-							<!-- /product -->
-
-							<!-- product -->
-							<div class="col-md-4 col-xs-6">
-								<div class="product">
-									<div class="product-img">
-										<img src="./img/product08.png" alt="">
-										<div class="product-label">
-											<span class="sale">-30%</span>
-										</div>
-									</div>
-									<div class="product-body">
-										<p class="product-category">Samsung </p>
-										<h3 class="product-name"><a href="#">SAMSUNG GALAXY S20 ULTRA</a></h3>
-										<h4 class="product-price">9.990.000₫ <del class="product-old-price">13.590.000₫</del></h4>
-										<div class="product-rating">
-										</div>
-										<div class="product-btns">
-											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Yêu thích</span></button>
-											<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">So sánh</span></button>
-											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Xem nhanh</span></button>
-										</div>
-									</div>
-									<div class="add-to-cart">
-										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Bỏ vào giỏ hàng</button>
-									</div>
-								</div>
-							</div>
-							<!-- /product -->
-
-							<div class="clearfix visible-sm visible-xs"></div>
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
@@ -593,15 +507,7 @@
 			</div>
 
 			<!-- /container -->
-			<div class="store-filter clearfix">
-				<ul class="store-pagination">
-					<li class="active">1</li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-				</ul>
-			</div>
+			
 		</div>
 		<!-- /SECTION -->
 
@@ -656,7 +562,7 @@
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>273 An Dương Vương</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+098-95-51-84</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>cook.shop@email.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -738,9 +644,19 @@
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
 		<script>
-			
 
-		const checkboxes = document.querySelectorAll('.input-checkbox input');
+        // User Dropdown
+        let subMenu = document.getElementById("subMenu");
+          function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+          }
+
+
+
+
+
+        // PHAN LOAI
+			const checkboxes = document.querySelectorAll('.input-checkbox input');
 		checkboxes.forEach(checkbox => {
   		checkbox.addEventListener('click', () => {
 		const href = checkbox.dataset.href;

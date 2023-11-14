@@ -239,48 +239,43 @@ function signup(e){
 
 }
 
-function login(e){
+
+
+//  adminInfo = [{
+//     "username": "admin",
+//     "password": "adadad"
+// }];
+   
+function login(e) {
 	event.preventDefault();
+  
 	let username = document.getElementById("username").value;
-	// let email = document.getElementById("email").value;
 	let password = document.getElementById("password").value;
+  
+	if (username === "admin" && password === "adadad") {
+	  alert("Đăng nhập thành công!");
+	  window.location.href = "admin.html";
+	  return; 
+	}
+  
 	let user = localStorage.getItem(username);
 	let data = JSON.parse(user);
+  
+	if (!username) {
+	  alert("Vui lòng nhập tên người dùng!");
+	} else if (!password) {
+	  alert("Vui lòng nhập mật khẩu!");
+	} 
 	
-
-	if(!username){
-		alert("Vui lòng nhập tên người dùng!");
-	}
-
-	else if(!password){
-		alert("Vui lòng nhập mật khẩu!");
-	}
-
-	else{
-	if(user == null){
-			alert("Vui lòng nhập thông tin");
-	
-		}
-	else if( username == data.username && password == data.password){
-			alert("Đăng nhập thành công!");
-			
-			if(data.username == "admin12" && data.password == "admin123"){
-				location.href="admin.html";
-			}
-			else if (data.username = "user123" && data.password == "user113"){
-				location.href = "user.html";
-			}
-
-	}
-
-	
- 	
-
-	else{
+	else {
+	  if (username === data.username && password === data.password) {
+		alert("Đăng nhập thành công!");
+		window.location.assign("user.html");
+	  } else {
 		alert("Đăng nhập thất bại. Mật khẩu hoặc tài khoản không đúng.");
+	  }
 	}
-}
-}
+  }
 //cart
 const quantityInput = document.getElementById('cart-input');
 const increaseButton = document.getElementById('qty-increase');

@@ -25,7 +25,7 @@
 
  		<!-- Custom stlylesheet -->
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
-
+        <link rel="stylesheet" href="css/user.css">
 		
 
     </head>
@@ -33,16 +33,42 @@
 		<!-- HEADER -->
 		<header>
 			<!-- TOP HEADER -->
-			<div id="top-header">
+			<div id="top-header" class="user">
 				<div class="container">
 					<ul class="header-links pull-left">
 						<li><a href="#"><i class="fa fa-phone"></i> +098-95-51-84</a></li>
 						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i> 273 An Dương Vương</a></li>
 					</ul>
-					<ul class="header-links pull-right">
+					<ul class="header-links pull-right ">
 						<li><a href="#"><i class="fa fa-money"></i> VND</a></li>
-						<li><a href="login.html"><i class="fa fa-user-o"></i> Tài khoản</a></li>
+						<li><img class="ava-user"  src="img/ava1.png"  alt=""onclick="toggleMenu()" > <a href="#">user123</a></li>     
+						<div class="sub-menu-wrap" id="subMenu">
+						  <div class="sub-menu">
+							<div class="user-info">
+							  <img src="img/ava1.png" alt="">
+							  <h3>User123</h3>
+							</div>
+		
+							<hr>
+		
+							<a href="#" class="sub-menu-link">
+							  <img src="img/profile.png" alt="">
+							  <p>Chỉnh sửa hồ sơ</p>
+							  <span>></span>
+							</a>
+		
+							
+					
+				
+							<a href="login.html" class="sub-menu-link">
+							  <img src="img/logout.png" alt="">
+							  <p>Đăng xuất</p>
+							  <span>></span>
+							</a>
+		
+						  </div>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -57,7 +83,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="user.html" class="logo">
 									<img src="./img/logo.png" alt="">
 								</a>
 							</div>
@@ -125,8 +151,8 @@
 											<h5>TỔNG: 99.060.000₫</h5>
 										</div>
 										<div class="cart-btns">
-											<a href="cart.html">Xem giỏ hàng</a>
-											<a href="checkout.html">Thanh toán  <i class="fa fa-arrow-circle-right"></i></a>
+											<a href="#">Xem giỏ hàng</a>
+											<a href="checkout1.html">Thanh toán  <i class="fa fa-arrow-circle-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -160,9 +186,9 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Trang chủ</a></li>
-						<li><a href="#">Ưu đãi</a></li>
-						<li><a href="#">Phân loại</a></li>
+						<li class="active"><a href="user.html">Trang chủ</a></li>
+						<li><a href="#hot-deal">Ưu đãi</a></li>
+						<li><a href="store1.html">Sản phẩm</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -181,7 +207,7 @@
 					<div class="col-md-12">
 						<h3 class="breadcrumb-header">Thanh toán</h3>
 						<ul class="breadcrumb-tree">
-							<li><a href="#">Trang chủ</a></li>
+							<li><a href="user.html">Trang chủ</a></li>
 							<li class="active">Thanh toán</li>
 						</ul>
 					</div>
@@ -449,6 +475,12 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+     function toggleMenu(){
+       subMenu.classList.toggle("open-menu");
+     }
 
+   </script>
 	</body>
 </html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/admin.css">
+
+ 
+
+</head>
+
+<body>
+    
+
+      <section id="menu">
+          <div class="logo">
+            <img src="/img/logo.png" alt="">
+            <h2>ADMIN</h2>
+          </div>
+          <div class="items">
+            <li><i class="fa fa-pie-chart"></i> <a href="#">Cập nhật</a></li>
+            <li><i class="fa fa-table"></i> <a href="#">Bảng</a></li>
+            <li><i class="fa fa-credit-card"></i> <a href="#">Thẻ</a></li>
+            <li><i class="fa fa-pencil-square-o"></i><a href="#">Mẫu</a> </li>
+          
+          </div>
+
+        </section>
+
+      <section id="interface">
+        <div class="nav">
+          <div class="n1">
+            
+            <div class="left-pull">
+
+              <div id="menu-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </div>
+              
+            
+          
+              <div class="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" placeholder="Tìm kiếm">
+              </div>
+            </div>
+             
+            
+            <div class="profile">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+              
+                <img src="/img/ava1.png" alt="" onclick="toggleMenu()">
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <img src="/img/ava1.png" alt="">
+                      <h3>Admin</h3>
+                    </div>
+
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                      <img src="/img/profile.png" alt="">
+                      <p>Chỉnh sửa hồ sơ</p>
+                      <span>></span>
+                    </a>
+
+                    
+                    <a href="#" class="sub-menu-link">
+                      <img src="/img/setting.png" alt="">
+                      <p>Cài đặt</p>
+                      <span>></span>
+                    </a>
+                    
+                    <a href="#" class="sub-menu-link">
+                      <img src="/img/help.png" alt="">
+                      <p>Giúp đỡ & Hỗ trợ</p>
+                      <span>></span>
+                    </a>
+                    
+                    <a href="/login.html" class="sub-menu-link">
+                      <img src="/img/logout.png" alt="">
+                      <p>Đăng xuất</p>
+                      <span>></span>
+                    </a>
+
+                  </div>
+                </div>
+            
+              
+
+              </div>
+
+          </div>
+
+          
+          <h3 class="i-name">
+            Dashboard
+          </h3>
+
+          <div class="values">
+            <div class="val-box">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              <div>
+                <h3>1,213</h3>
+                <span>NGƯỜI DÙNG</span>
+              </div>
+            </div>
+
+
+
+            <div class="val-box">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <div>
+                <h3>12,163</h3>
+                <span>TỔNG HÓA ĐƠN</span>
+              </div>
+            </div>
+          
+
+          
+            <div class="val-box">
+              <i class="fa fa-product-hunt" aria-hidden="true"></i>
+              <div>
+                <h3>15,213</h3>
+                <span>SẢN PHẨM BÁN ĐƯỢC</span>
+              </div>
+            </div>
+         
+
+         
+            <div class="val-box">
+              <i class="fa fa-money" aria-hidden="true"></i>
+              <div>
+                <h3>120,213</h3>
+                <span>THU NHẬP THÁNG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+       
+            <div class="container mt-4 mb-3  ">
+             
+            
+              <div class="table-responsive">
+                <table class="table table-bordered bg">
+                  <thead >
+                    <tr>
+                      <th class="text-center">#</th>
+                      <th class="text-center">Sản phẩm</th>
+                      <th class="text-center">Tên</th>
+                      <th class="text-center">Giá</th>
+                      <th class="text-center">Khuyến mãi</th>
+                      <th class="text-center">Hành động</th>
+                      
+                   
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td><img src="/img/product01.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                         <i class="fa fa-wrench"></i>
+                        <span class="tooltext">Sửa</span>
+                      </div>
+                       
+                      <div class="tool">
+                        <i class="fa fa-trash"></i>
+                        <span class="tooltext">Xóa</span>
+                      </div>
+                        
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>2</td>
+                    <td><img src="/img/product02.png" alt=""></td>
+                    <td>iPhone 13 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>3</td>
+                    <td><img src="/img/product03.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>4</td>
+                    <td><img src="/img/product04.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>5</td>
+                    <td><img src="/img/product05.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>6</td>
+                    <td><img src="/img/product06.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>7</td>
+                    <td><img src="/img/product07.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>8</td>
+                    <td><img src="/img/product08.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+
+                  <tr class="text-center">
+                    <td>9</td>
+                    <td><img src="/img/product09.png" alt=""></td>
+                    <td>iPhone 14 PRO MAX</td>
+                    <td>27.090.000đ</td>
+                    <td>Góp 0%</td>
+                    <td >
+                      <div class="tool">
+                        <i class="fa fa-wrench"></i>
+                       <span class="tooltext">Sửa</span>
+                     </div>
+                      
+                     <div class="tool">
+                       <i class="fa fa-trash"></i>
+                       <span class="tooltext">Xóa</span>
+                     </div>
+                        
+                    </td>
+                  </tr>
+                
+                </tbody>
+                </table>
+              </div>
+          
+            </div>
+
+          
+          
+
+
+            <div id="khungThemSanPham" class="overlay">
+                <span class="close" onclick="this.parentElement.style.transform = 'scale(0)';">×</span>
+                <table class="overlayTable table-outline table-content table-header">
+                    <tbody><tr>
+                        <th colspan="2">Thêm Sản Phẩm</th>
+                    </tr>
+                    <tr>
+                        <td>Mã sản phẩm:</td>
+                        <td><input type="text" id="maspThem"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên sản phẩm:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>Giá tiền:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Số sao (số nguyên 0-&gt;5):</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Đánh giá (số nguyên):</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Khuyến mãi:</td>
+                        <td>
+                            <select>
+                                <option value="">Không</option>
+                                <option value="tragop">Trả góp</option>
+                                <option value="giamgia">Giảm giá</option>
+                                <option value="giareonline">Giá rẻ online</option>
+                                <option value="moiramat">Mới ra mắt</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Giá trị khuyến mãi:</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Thông số kĩ thuật</th>
+                    </tr>
+                    <tr>
+                        <td>Màn hình:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Hệ điều hành:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Camara sau:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Camara trước:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>CPU:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>RAM:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Bộ nhớ trong:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Thẻ nhớ:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Dung lượng Pin:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="table-footer"> <button onclick="themSanPham()">THÊM</button> </td>
+                    </tr>
+                </tbody></table>
+            </div>
+
+            <div id="khungSuaSanPham" class="overlay" style="transform: scale(0);"><span class="close" onclick="this.parentElement.style.transform = 'scale(0)';">×</span>
+    <table class="overlayTable table-outline table-content table-header">
+        <tbody><tr>
+            <th colspan="2">Mobiistar Zumbo S2 Dual</th>
+        </tr>
+        <tr>
+            <td>Mã sản phẩm:</td>
+            <td><input type="text" value="Mob1"></td>
+        </tr>
+        <tr>
+            <td>Tên sẩn phẩm:</td>
+            <td><input type="text" value="Mobiistar Zumbo S2 Dual"></td>
+        </tr>
+        <tr>
+            <td>Hãng:</td>
+            <td>
+                <select><option value="Apple">Apple</option><option value="Samsung">Samsung</option><option value="Oppo">Oppo</option><option value="Nokia">Nokia</option><option value="Huawei">Huawei</option><option value="Xiaomi">Xiaomi</option><option value="Realme">Realme</option><option value="Vivo">Vivo</option><option value="Philips">Philips</option><option value="Mobell">Mobell</option><option value="Mobiistar" selected="">Mobiistar</option><option value="Itel">Itel</option><option value="Coolpad">Coolpad</option><option value="HTC">HTC</option><option value="Motorola">Motorola</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hình:</td>
+            <td>
+                <img class="hinhDaiDien" id="anhDaiDienSanPhamSua" src="img/products/mobiistar-zumbo-s2-dual-300x300.jpg">
+                <input type="file" accept="image/*" onchange="capNhatAnhSanPham(this.files, 'anhDaiDienSanPhamSua')">
+            </td>
+        </tr>
+        <tr>
+            <td>Giá tiền (số nguyên):</td>
+            <td><input type="text" value="2850000"></td>
+        </tr>
+        <tr>
+            <td>Số sao (số nguyên 0-&gt;5):</td>
+            <td><input type="text" value="4"></td>
+        </tr>
+        <tr>
+            <td>Đánh giá (số nguyên):</td>
+            <td><input type="text" value="104"></td>
+        </tr>
+        <tr>
+            <td>Khuyến mãi:</td>
+            <td>
+                <select>
+                    <option value="">Không</option>
+                    <option value="tragop">Trả góp</option>
+                    <option value="giamgia">Giảm giá</option>
+                    <option value="giareonline">Giá rẻ online</option>
+                    <option value="moiramat" selected="">Mới ra mắt</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Giá trị khuyến mãi:</td>
+            <td><input type="text" value=""></td>
+        </tr>
+        <tr>
+            <th colspan="2">Thông số kĩ thuật</th>
+        </tr>
+        <tr>
+            <td>Màn hình:</td>
+            <td><input type="text" value="IPS LCD, 5.5', Full HD"></td>
+        </tr>
+        <tr>
+            <td>Hệ điều hành:</td>
+            <td><input type="text" value="Android 7.0 (Nougat)"></td>
+        </tr>
+        <tr>
+            <td>Camara sau:</td>
+            <td><input type="text" value="13 MP"></td>
+        </tr>
+        <tr>
+            <td>Camara trước:</td>
+            <td><input type="text" value="13 MP và 8 MP (2 camera)"></td>
+        </tr>
+        <tr>
+            <td>CPU:</td>
+            <td><input type="text" value="MT6737T, 4 nhân"></td>
+        </tr>
+        <tr>
+            <td>RAM:</td>
+            <td><input type="text" value="3 GB"></td>
+        </tr>
+        <tr>
+            <td>Bộ nhớ trong:</td>
+            <td><input type="text" value="32 GB"></td>
+        </tr>
+        <tr>
+            <td>Thẻ nhớ:</td>
+            <td><input type="text" value="MicroSD, hỗ trợ tối đa 128 GB"></td>
+        </tr>
+        <tr>
+            <td>Dung lượng Pin:</td>
+            <td><input type="text" value="3000 mAh"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="table-footer"> <button onclick="suaSanPham('Mob1')">SỬA</button> </td>
+        </tr>
+    </tbody></table></div>
+        </div>
+      
+
+      </section>
+
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/admin.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

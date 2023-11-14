@@ -373,6 +373,181 @@ tbody tr td{
     font-weight: 600;
 }
 
+/*
+    CATEGORY ADMIN
+*/
+
+td img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.bg{
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ========================= tooltip from w3school  ====================== */
+.tool {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.tool .tooltext {
+    visibility: hidden;
+    width: 50px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 21;
+    bottom: -150%;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tool .tooltext::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.tool:hover .tooltext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 14;
+    transition: .2s ease;
+    transform: scale(0);
+    background-color: #020202d8;
+}
+
+.overlayTable {
+    margin: 50px auto;
+    width: auto;
+    background-color: #23282c;
+}
+
+.overlayTable td:first-child {
+    text-align: right;
+}
+
+.overlayTable input {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+}
+
+.overlayTable input[type="file"] {
+    background-color: transparent;
+}
+
+.close {
+    /* nút tắt form */
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    font-size: 3rem;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    color: #aaa;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.close:hover {
+    color: #fff;
+    background-color: #f33;
+    border-radius: 50%;
+}
+
+
+.table-content td i {
+    padding: .3em;
+    cursor: pointer;
+}
+
+.table-content td i.fa-wrench:hover {
+    color: #63c2de
+}
+
+.table-content td i.fa-trash:hover {
+    color: #f86c6b
+}
+
+.table-content td i.fa-check:hover {
+    color: #5ce457d8
+}
+
+.table-content td i.fa-remove:hover {
+    color: #f86c6b
+}
+
+/*  phần footer table  */
+.table-footer {
+    background-color: #3e464d;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #23282c;
+}
+
+.table-footer input,
+.table-footer button,
+.table-footer select {
+    padding: 5px 10px;
+    border: 3px solid transparent;
+    background-color: #cccece;
+}
+
+/* Nút bấm ở footer */
+.table-footer button {
+    cursor: pointer;
+    background-color: #23282c;
+    color: #e4e7ea;
+    transition-duration: .2s;
+}
+
+.table-footer button:hover {
+    background-color: #7a879486;
+    border-color: #73818f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:769px ) {
     #menu{
         width: 270px;
