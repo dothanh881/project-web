@@ -2136,3 +2136,115 @@ textarea.input {
   margin-right: -15px ;
   position: relative;
 }
+.header-cart {
+  width: 100%;
+  display: inline-flex;
+  background-color:#59738D;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.elements-cart{
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 100px;
+}
+.cart-itemlist{
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.checkbox-cart-item{
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 35px;
+}
+.in4-cart-item{
+  display: inline-block;
+  width: min-content;
+  margin-left: 100px;
+}
+.cate-item{
+  display: inline-block;
+}
+.product-price{
+  display: inline-block;
+  margin-left: 100px;
+}
+.cart-number-item{
+  display: inline-flex;
+  width: 200px;
+  margin-left: 130px;
+}
+.cart-input-number {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+
+}
+
+.cart-input-number input[type="number"]::-webkit-inner-spin-button, .cart-input-number input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-input-number input[type="number"] {
+  -moz-appearance: textfield;
+  height: 40px;
+  width: 85%;
+  border: 1px solid #E4E7ED;
+  border-right: none;
+  background-color: #FFF;
+  padding: 0px 35px 0px 15px;
+}
+.cart-input-number .qty-increase, .cart-input-number .qty-decrease {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E4E7ED;
+  background-color: #FFF;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cart-input-number .qty-increase {
+  right: 0;
+  top: 0;
+  border-bottom: 0px;
+}
+
+.cart-input-number .qty-decrease {
+  right: 0;
+  bottom: 0;
+}
+
+.cart-input-number .qty-increase:hover, .input-number .qty-decrease:hover {
+  background-color: #E4E7ED;
+  color: #1964af;
+}
+.cart-total-item{
+  display: inline-block;
+  margin-left: 820px;
+  width: 300px;
+  font-size: 20px;
+}
+.butt-cart-checkout{
+  background-color: #59738D;
+  font-size: 30px;
+  border:0;
+  width: 250px;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-left: 850px;
+}
+.butt-cart-checkout:hover{
+  background-color:#94ACC4;
+}

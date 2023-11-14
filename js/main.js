@@ -239,3 +239,34 @@ function login(e){
 		alert("Đăng nhập thất bại");
 	}
 }
+//cart
+const quantityInput = document.getElementById('cart-input');
+const increaseButton = document.getElementById('qty-increase');
+const decreaseButton = document.getElementById('qty-decrease');
+
+increaseButton.addEventListener('click', function() {
+  // Tăng giá trị của input
+  quantityInput.value = parseInt(quantityInput.value) + 1;
+});
+
+decreaseButton.addEventListener('click', function() {
+  // Giảm giá trị của input (đảm bảo giá trị không nhỏ hơn 0)
+  if (parseInt(quantityInput.value) > 0) {
+    quantityInput.value = parseInt(quantityInput.value) - 1;
+  }
+
+  // Kiểm tra nếu giá trị bằng 0, xóa sản phẩm
+  if (parseInt(quantityInput.value) === 0) {
+    var remove_cart;
+for (var i = 0; i < remove_cart.length; i++) {
+  var button = remove_cart[i]
+  button.addEventListener("click", function () {
+    var button_remove = event.target
+    button_remove.parentElement.parentElement.remove()
+  })
+}
+  }
+});
+
+// // Hàm xóa sản phẩm
+/// xóa cart
