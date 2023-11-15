@@ -176,23 +176,25 @@ let password = document.forms['form']['password'];
 let email_error = document.getElementById('email_error');
 let pass_error = document.getElementById('pass_error');
 
-function validated(){
+// function validated(){
 
-    if(email.value.length < 9){
-        email.style.border = "1px solid red";
-        email_error.style.display = "block";
-        email.focus();
-        return false;
-    }
+//     if(email.value.length < 9){
+//         email.style.border = "1px solid red";
+//         email_error.style.display = "block";
+//         email.focus();
+//         return false;
+//     }
     
         
-    if(password.value.length < 6){
-        password.style.border = "1px solid red";
-        pass_error.style.display = "block";
-        password.focus();
-        return false;
-    }
-}
+//     if(password.value.length < 6){
+//         password.style.border = "1px solid red";
+//         pass_error.style.display = "block";
+//         password.focus();
+//         return false;
+//     }
+// }
+
+
 
 
 function signup(e){
@@ -202,28 +204,48 @@ function signup(e){
 	let password = document.getElementById("password").value;
 	let confirmPassword = document.getElementById("confirm_password").value;
 
-	if (!username) {
-		alert('Vui lòng nhập tên người dùng.');
-		return;
-	  }
 
-	  const emailRegex = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-	  if (!emailRegex.test(email)) {
-		alert('Vui lòng nhập Email.');
-		return;
-	  }
-
-	  if (!password) {
-		alert('Vui lòng nhập mật khẩu.');
-		return;
-	  }
-	  
-
-	if(confirmPassword !== password){
-		alert("Mật khẩu không khớp. Vui lòng nhập lại.");
-    	return;
+	
+	// Kiểm tra tên người dùng
+	var regex = /^[a-zA-Z0-9]+$/;
+	if (!regex.test(username)) {
+	  alert('Tên người dùng chỉ được nhập các kí tự chữ và số.');
+	  return false;
 	}
-
+	else if (username.length < 6 || username.length > 20) {
+		alert("Tên người dùng phải có ít nhất 6 ký tự và không quá 20 ký tự.");
+		return;
+	}
+	else if (!username) {
+	  alert('Vui lòng nhập tên người dùng.');
+	  return false;
+	}
+  
+	// Kiểm tra email
+	const emailRegex = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	if (!emailRegex.test(email)) {
+	  alert('Email không hợp lệ. Vui lòng nhập lại.');
+	  return false;
+	}
+  
+	// Kiểm tra mật khẩu
+	if (!password) {
+	  alert('Vui lòng nhập mật khẩu.');
+	  return false;
+	}
+	else if (password.length < 8 || password.length > 32) {
+		alert("Mật khẩu phải có ít nhất 8 ký tự và không quá 32 ký tự.");
+		return;
+	  }
+  
+	// Kiểm tra mật khẩu và mật khẩu nhập lại
+	if (password !== confirmPassword) {
+	  alert('Mật khẩu không khớp. Vui lòng nhập lại.');
+	  return false;
+	}
+  
+	
+  
 
 	let user = {
 		username : username,
@@ -240,10 +262,9 @@ function signup(e){
 }
 
 
-
 //  adminInfo = [{
-//     "username": "admin",
-//     "password": "adadad"
+//     "username": "admin12",
+//     "password": "admin123456"
 // }];
    
 function login(e) {
@@ -252,30 +273,41 @@ function login(e) {
 	let username = document.getElementById("username").value;
 	let password = document.getElementById("password").value;
   
-	if (username === "admin" && password === "adadad") {
+	if (username === "admin12" && password === "admin123456") {
 	  alert("Đăng nhập thành công!");
-	  window.location.href = "admin.html";
-	  return; 
+	  window.location.href = "admin/admin.html";
+	  return;
 	}
   
 	let user = localStorage.getItem(username);
 	let data = JSON.parse(user);
   
+	var regex = /^[a-zA-Z0-9]+$/;
 	if (!username) {
 	  alert("Vui lòng nhập tên người dùng!");
-	} else if (!password) {
+	} else if (username.length < 6 || username.length > 20) {
+	  alert("Tên người dùng phải có ít nhất 6 ký tự và không quá 20 ký tự.");
+	  return;
+	} else if (!regex.test(username)) {
+	  alert('Tên người dùng chỉ được nhập các kí tự chữ và số.');
+	  return;
+	}
+  
+	if (!password) {
 	  alert("Vui lòng nhập mật khẩu!");
-	} 
-	
-	else {
-	  if (username === data.username && password === data.password) {
-		alert("Đăng nhập thành công!");
-		window.location.assign("user.html");
-	  } else {
-		alert("Đăng nhập thất bại. Mật khẩu hoặc tài khoản không đúng.");
-	  }
+	} else if (password.length < 8 || password.length > 32) {
+	  alert("Mật khẩu phải có ít nhất 8 ký tự và không quá 32 ký tự.");
+	  return;
+	}
+  
+	if (username === data.username && password === data.password) {
+	  alert("Đăng nhập thành công!");
+	  window.location.assign("user.html");
+	} else {
+	  alert("Đăng nhập thất bại. Mật khẩu hoặc tài khoản không đúng.");
 	}
   }
+
 //cart
 const quantityInput = document.getElementById('cart-input');
 const increaseButton = document.getElementById('qty-increase');

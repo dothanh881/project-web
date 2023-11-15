@@ -11,6 +11,8 @@ $(document).ready(function(){
       subMenu.classList.toggle("open-menu");
     }
 
+
+    
     function themSanPham() {
       var newSp = layThongTinSanPhamTuTable('khungThemSanPham');
       if(!newSp) return;

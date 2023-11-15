@@ -105,6 +105,7 @@ body{
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
+    
 
 }
 
@@ -199,8 +200,8 @@ body{
     border: 1px solid #d7dbe6;
     border-radius: 4px;
     justify-content: flex-start;
-    /* position: absolute;
-    top: 20%;
+    
+    /*top: 20%;
     left: 3%; */
 }
 #interface .nav .search i{
@@ -216,8 +217,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* position: absolute;
-    right: 3%; */
+    
 }
 
 #interface .nav .profile i{
@@ -385,7 +385,7 @@ td img{
 
 .bg{
     background-color: #ffffff;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
 }
 
