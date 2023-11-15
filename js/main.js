@@ -148,51 +148,26 @@
 
 	// Price Slider
 	var priceSlider = document.getElementById('price-slider');
-	if (priceSlider) {
-		noUiSlider.create(priceSlider, {
-			start: [1, 999],
-			connect: true,
-			step: 1,
-			range: {
-				'min': 1,
-				'max': 999
-			}
-		});
+if (priceSlider) {
+    noUiSlider.create(priceSlider, {
+        start: [0, 35000000],
+        connect: true,
+        step: 1000000,
+        range: {
+            'min': 1000000,
+            'max': 40000000
+        }
+    });
 
-		priceSlider.noUiSlider.on('update', function( values, handle ) {
-			var value = values[handle];
-			handle ? priceInputMax.value = value : priceInputMin.value = value
-		});
-	}
-
+    priceSlider.noUiSlider.on('update', function(values, handle) {
+        var value = values[handle];
+        handle ? priceInputMax.value = value : priceInputMin.value = value;
+    });
+}
 })(jQuery);
 
 
-// Form
 
-let email = document.forms['form']['email'];
-let password = document.forms['form']['password'];
-
-let email_error = document.getElementById('email_error');
-let pass_error = document.getElementById('pass_error');
-
-// function validated(){
-
-//     if(email.value.length < 9){
-//         email.style.border = "1px solid red";
-//         email_error.style.display = "block";
-//         email.focus();
-//         return false;
-//     }
-    
-        
-//     if(password.value.length < 6){
-//         password.style.border = "1px solid red";
-//         pass_error.style.display = "block";
-//         password.focus();
-//         return false;
-//     }
-// }
 
 
 
@@ -279,6 +254,8 @@ function login(e) {
 	  return;
 	}
   
+	
+
 	let user = localStorage.getItem(username);
 	let data = JSON.parse(user);
   

@@ -2185,6 +2185,8 @@ textarea.input {
 
 }
 
+
+
 .cart-input-number input[type="number"]::-webkit-inner-spin-button, .cart-input-number input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -2246,4 +2248,12 @@ textarea.input {
 }
 .butt-cart-checkout:hover{
   background-color:#94ACC4;
+}
+
+
+/*Cart INFORM*/
+
+.inform{
+  text-align: center;
+  margin-top: 30px;
 }
